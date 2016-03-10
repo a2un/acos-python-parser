@@ -1,0 +1,13 @@
+{
+  "name": "acos-python-parser",
+  "version": "0.1.0",
+  "description": "Python code parsing tool for ACOS",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Teemu Sirkiä",
+  "license": "MIT",
+  "dependencies": {
+    "python-shell": "0.0.3"
+  }
+}

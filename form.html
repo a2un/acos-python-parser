@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python parser</title>
+  </head>
+  <body>
+    <h1>Python content parser</h1>
+    <p>Type (or just copy&amp;paste) Python code in the box below to parse its contents.
+    The result will be a JSON object containing all the nodes in the given code. It is also
+    possible the make POST request directly to this address and give the code in POST parameters <em>code</em>
+    and <em>mode</em>.
+    </p>
+    <p>
+    The result will contain the leaf nodes of this <a href="/static/python-parser/ontology.png">ontology</a>.
+    The ontology is based on the nodes available in <a href="https://docs.python.org/3/library/ast.html#abstract-grammar">Python's AST</a>.
+    </p>
+    
+    <p>The following parsing modes are available:</p>
+    <ul>
+        <li><em>simple</em>: Output contains all the lines and nodes that are present on that line
+        <li><em>complex</em>: Output contains all the lines and nodes that are present on that line and if it is a block structure also the end line number is given
+        <li><em>hierarchical</em>: Output contains all the nodes and their start and end line numbers as a hierarchical structure
+    </ul>
+    
+    <form action="#" method="POST">
+    <textarea name="code" cols="80" rows="40"></textarea>
+    <p>
+        Parsing mode:
+        <select name="mode">
+            <option value="simple">simple</option>
+            <option value="complex">complex</option>
+            <option value="hierarchical">hierarchical</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Parse"/>
+    </p>
+    </form>
+  </body>
+</html>
