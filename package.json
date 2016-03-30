@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "description": "Python code parsing tool for ACOS",
   "main": "index.js",
-  "scripts": {
+  "scripts": {},
+  "author": {
+    "name": "Teemu Sirkiä"
   },
-  "author": "Teemu Sirkiä",
   "license": "MIT",
   "dependencies": {
     "python-shell": "0.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acos-server/acos-python-parser.git"
   }
 }
