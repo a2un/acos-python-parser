@@ -3,7 +3,9 @@
   "version": "0.1.1",
   "description": "Python code parsing tool for ACOS",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start":"node index.js"
+  },
   "author": {
     "name": "Teemu Sirkiä"
   },
